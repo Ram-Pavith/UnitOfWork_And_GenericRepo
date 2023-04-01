@@ -20,13 +20,13 @@ namespace UnitOfWork_GenericRepo_MAIN.Models
         public virtual DbSet<Order> Orders { get; set; } = null!;
         public virtual DbSet<Product> Products { get; set; } = null!;
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        /*protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder.UseSqlServer("Server=DESKTOP-LJOJLTJ\\SQLEXPRESS;Database=Shopping;Trusted_Connection=True;");
             }
-        }
+        }*/
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
